@@ -4,6 +4,7 @@
     border: 0;
     box-shadow: -3px 6px 5px rgb(180, 180, 180);
     border-radius: 5px;
+    font-size: 14px;
 }
 .in-box::placeholder{
    color: black;
@@ -11,7 +12,7 @@
 }
 .in-box:focus{
     font-family: sans-serif;
-    font-size: 17px;
+    /* font-size: 17px; */
     color: rgb(0, 0, 0);
     
 }

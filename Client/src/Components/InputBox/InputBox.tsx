@@ -1,7 +1,8 @@
+import { FunctionComponent } from "react";
 import { InputBoxInterface } from "../../Utils/Interfaces";
 import "./InputBox.css";
 
-const InputBox = ({ type, placeHolder, height, width, onChangeValue }:InputBoxInterface) => {
+const InputBox:FunctionComponent<InputBoxInterface> = ({type, placeHolder, height, width, onChangeValue} ) => {
   return (
     <>
       <input

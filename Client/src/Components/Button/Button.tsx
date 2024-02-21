@@ -1,7 +1,8 @@
+import { FunctionComponent } from "react";
 import { ButtonInterface } from "../../Utils/Interfaces";
 import "./Button.css";
 
-const Button = ({ height, width, bColor, BtnClick }: ButtonInterface) => {
+const Button:FunctionComponent<ButtonInterface> = ({ height, width, bColor, BtnClick,name }) => {
   return (
     <>
       <button
@@ -14,7 +15,7 @@ const Button = ({ height, width, bColor, BtnClick }: ButtonInterface) => {
           backgroundColor: bColor,
         }}
       >
-        button
+        {name}
       </button>
     </>
   );

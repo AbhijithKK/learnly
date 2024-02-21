@@ -1,0 +1,58 @@
+.login-t-main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+}
+.login-t-left {
+  width: 60%;
+
+  height: 100vh;
+}
+.login-t-left-img {
+  background-image: url("../../assets/loginpage-pic.png");
+
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+.login-t-right {
+  width: 40%;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.login-t-right-center{
+    
+    justify-content: center;
+    height: 80vh;
+    width: 80%;
+    background-color:white;
+    border-radius: 10px;
+    box-shadow: 0 9px 4px rgba(0,0, 0, 0.6);
+    padding-top: 40px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-t-right-form{
+    text-align: center;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.login-t-right-inputbox{
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+.login-t-right-button{
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+.login-t-right-text{
+    font-size: 13px;
+    font-weight: 100;
+    font-family: sans-serif;
+}
