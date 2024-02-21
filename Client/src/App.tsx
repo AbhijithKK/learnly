@@ -1,10 +1,13 @@
-import InputBox from "./Components/InputBox/InputBox"
+
 
 function App() {
+ function setstate() {
+  
+ }
   return (
    <>
    <div>
-    <InputBox/>
+  
    </div>
    </>
   )
