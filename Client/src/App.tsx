@@ -1,11 +1,11 @@
-import { useState } from 'react'
-
-
+import InputBox from "./Components/InputBox/InputBox"
 
 function App() {
   return (
    <>
-   <div>hii</div>
+   <div>
+    <InputBox/>
+   </div>
    </>
   )
 }
