@@ -3,7 +3,7 @@ import { LSTemplateInterface } from '../../Utils/Interfaces'
 
 import './LSpageTemplate.css'
 
-const LSpageTemplate:FunctionComponent<LSTemplateInterface> = ({title,InputComponent,link,BtnComponent ,rboxHeight}) => {
+const LSpageTemplate:FunctionComponent<LSTemplateInterface> = ({title,InputComponent,link,BtnComponent ,rboxHeight,linkText,linkName}) => {
  
   return (
     <div className='login-t-main'>
@@ -24,7 +24,7 @@ const LSpageTemplate:FunctionComponent<LSTemplateInterface> = ({title,InputCompo
                 ))
                }
                 
-                <p className='login-t-right-text'>Dont have an account...?<span><a href={link}>Signup</a></span></p>
+                <p className='login-t-right-text'>{linkText}<span><a href={link}>{linkName}</a></span></p>
                 <div className="login-t-right-button">
                     {BtnComponent}
                 </div>

@@ -23,4 +23,6 @@ export interface LSTemplateInterface{
     link:string
     BtnComponent:React.ReactNode
     rboxHeight:string
+    linkText:string
+    linkName:string
 }

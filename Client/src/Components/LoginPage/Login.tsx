@@ -13,7 +13,7 @@ const Login = () => {
     }
   return (
     <>
-      <LSpageTemplate link="/signup" title="Login" rboxHeight="60vh"
+      <LSpageTemplate linkName="Signup" link="/signup" title="Login" rboxHeight="40vh" linkText="Dont have an account...?"
        BtnComponent={<Button bColor="black" height="30px" width="60px" name="Login" BtnClick={Login}/>}
         InputComponent ={[
             <InputBox height="30px" width="80%" placeHolder="Email Address" type="email" onChangeValue={(e:string|number)=>setEmail(e)}/>,
