@@ -6,7 +6,9 @@ export interface InputBoxInterface{
     placeHolder:string
     height:string
     width:string
-    onChangeValue:(value:string|number)=>void
+    onChangeValue:(value:{})=>void
+    name:string|undefined
+    value:string|number
 }
 
 export interface ButtonInterface{
