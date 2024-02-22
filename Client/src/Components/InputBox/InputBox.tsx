@@ -14,6 +14,7 @@ const InputBox:FunctionComponent<InputBoxInterface> = ({type, placeHolder, heigh
           height: height,
           width: width,
         }}
+        required
       />
     </>
   );
