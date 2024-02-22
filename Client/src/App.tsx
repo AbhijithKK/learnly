@@ -1,4 +1,5 @@
 import Login from "./Components/LoginPage/Login"
+import Navbar from "./Components/Navbar/Navbar"
 import Signup from "./Components/SignupPage/Signup"
 
 function App() {
@@ -6,7 +7,8 @@ function App() {
   return (
    <>
    {/* <Login/> */}
-   <Signup/>
+   {/* <Signup/> */}
+   <Navbar/>
    </>
   )
 }
