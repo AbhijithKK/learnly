@@ -34,3 +34,11 @@ export interface BoxInterface{
     image:string
     btnfnc:()=>{}
 }
+
+export interface CboxInterface{
+    image:string
+    hedding:string
+    discription:string
+    lesson:string
+    payment:string
+}

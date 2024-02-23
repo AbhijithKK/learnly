@@ -1,0 +1,47 @@
+.cb-container{
+width: 80%;
+height: 16rem;
+border-radius: 1.2rem;
+box-shadow: 0 1px 5px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.cb-image{
+padding-left: 1rem;
+}
+.cb-image img{
+    height: 10rem;
+    width: 17.5rem;
+    border-radius: 1rem;
+}
+
+.cb-text-main{
+padding-left: 1rem;
+
+white-space:nowrap;
+overflow: hidden;
+}
+
+.cb-headding{
+font-weight: bold;
+padding-bottom: 2.5rem;
+}
+
+.cb-discription{
+line-height: 1.5rem;
+letter-spacing: 0.03rem;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cb-prize{
+display: flex;
+justify-content: space-around;
+padding-top: 1rem;
+}
+.cb-prize p:nth-child(2){
+    font-weight: bold;
+
+}
