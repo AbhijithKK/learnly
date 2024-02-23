@@ -27,6 +27,8 @@ const Home = () => {
         </div>
       </div>
     </div>
+    {/* section 2 scrollbar start */}
+    
       </div>
     </>
   )

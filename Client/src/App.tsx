@@ -1,3 +1,4 @@
+import Box from "./Components/Box/Box"
 import Footer from "./Components/Footer/Footer"
 import Home from "./Components/HomePage/Home"
 import Login from "./Components/LoginPage/Login"
@@ -12,7 +13,8 @@ function App() {
    {/* <Signup/> */}
    {/* <Navbar/> */}
    {/* <Footer/> */}
-   <Home/>
+   {/* <Home/> */}
+   <Box/>
    </>
   )
 }

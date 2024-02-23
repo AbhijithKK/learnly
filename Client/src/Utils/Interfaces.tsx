@@ -28,3 +28,9 @@ export interface LSTemplateInterface{
     linkText:string
     linkName:string
 }
+
+export interface BoxInterface{
+    title:string
+    image:string
+    btnfnc:()=>{}
+}

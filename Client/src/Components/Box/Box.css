@@ -1,0 +1,32 @@
+.box-container {
+  /* background-color: aqua; */
+  height: 16rem;
+  width: 17.8rem;
+  border-radius: 1rem;
+  border: 1px solid black;
+}
+.imgcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imgcontainer img {
+  padding-top: 0.2rem;
+  height: 10rem;
+  width: 17.5rem;
+  border-radius: 1rem;
+}
+
+.box-title {
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 10px;
+  padding-top: 8px;
+}
+
+.box-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0.8rem;
+}
