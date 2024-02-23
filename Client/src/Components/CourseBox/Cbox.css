@@ -1,47 +1,76 @@
-.cb-container{
-width: 80%;
-height: 16rem;
-border-radius: 1.2rem;
-box-shadow: 0 1px 5px;
-display: flex;
-align-items: center;
-justify-content: center;
+.cb-container {
+  width: 80%;
+  height: 16rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 1px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
-.cb-image{
-padding-left: 1rem;
+.cb-image {
+  padding-left: 1rem;
 }
-.cb-image img{
-    height: 10rem;
-    width: 17.5rem;
-    border-radius: 1rem;
-}
-
-.cb-text-main{
-padding-left: 1rem;
-
-white-space:nowrap;
-overflow: hidden;
+.cb-image img {
+  height: 10rem;
+  width: 17.5rem;
+  border-radius: 1rem;
 }
 
-.cb-headding{
-font-weight: bold;
-padding-bottom: 2.5rem;
+.cb-text-main {
+  padding-left: 1rem;
+
+  white-space: nowrap;
+  overflow: hidden;
 }
 
-.cb-discription{
-line-height: 1.5rem;
-letter-spacing: 0.03rem;
+.cb-headding {
+  font-weight: bold;
+  padding-bottom: 2.5rem;
+}
+
+.cb-discription {
+  line-height: 1.5rem;
+  letter-spacing: 0.03rem;
 
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.cb-prize{
-display: flex;
-justify-content: space-around;
-padding-top: 1rem;
+.cb-prize {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1rem;
 }
-.cb-prize p:nth-child(2){
-    font-weight: bold;
+.cb-prize p:nth-child(2) {
+  font-weight: bold;
+}
 
+@media (max-width: 600px) {
+  .cb-container {
+    width: 80%;
+    height: 22.5rem;
+    border-radius: 1.2rem;
+    box-shadow: 0 1px 5px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cb-image {
+    padding-left: 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .cb-headding {
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 2.5rem;
+  }
+  .cb-image img {
+    height: auto;
+    width: 95%;
+    border-radius: 1rem;
+  }
 }

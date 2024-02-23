@@ -1,5 +1,6 @@
 import Box from "./Components/Box/Box"
 import Cbox from "./Components/CourseBox/Cbox"
+import Courses from "./Components/CoursePage/Courses"
 import Footer from "./Components/Footer/Footer"
 import Home from "./Components/HomePage/Home"
 import Login from "./Components/LoginPage/Login"
@@ -15,7 +16,8 @@ function App() {
    {/* <Navbar/> */}
    {/* <Footer/> */}
    {/* <Home/> */}
-   <Cbox/>
+   {/* <Cbox/> */}
+   <Courses/>
    
    </>
   )

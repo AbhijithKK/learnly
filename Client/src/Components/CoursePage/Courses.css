@@ -1,0 +1,24 @@
+.couses-mains {
+  margin-top: 3rem;
+}
+.courses-head {
+  padding-top: 2rem;
+  padding-left: 4rem;
+}
+
+.couse-cboxes {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.courses-footer-mob {
+  margin-top: 1rem;
+}
+
+@media (max-width: 500px) {
+  .courses-footer-mob {
+    margin-top: 1rem;
+    margin-bottom: 3.5rem;
+  }
+}
