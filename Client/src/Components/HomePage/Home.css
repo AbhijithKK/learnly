@@ -1,7 +1,8 @@
 .home-main{
 margin-top: 60px;
 z-index: 0;
-position: fixed;
+
+
 
 }
 
@@ -15,6 +16,7 @@ position: fixed;
     display: flex;
     align-items: center;
     justify-content: baseline;
+    
 }
 .headding{
 font-weight: bolder;
@@ -29,6 +31,35 @@ max-width: 500px;
     padding: 50px;
     
 }
+
+
+
+
+
+.home-boxes{
+    width: 100%;
+}
+.home-box-title{
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 1.7rem;
+}
+
+.home-box-more-btn{
+    cursor: pointer;
+    font-weight: bolder;
+    font-style: oblique;
+    text-align: end;
+    margin-right: 2rem;
+}
+
+.home-box {
+    display: flex;    
+    gap: 50px;
+    padding: 20px;
+    overflow-x: scroll;
+  }
 
 @media (max-width:500px) {
     .home-section1{

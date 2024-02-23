@@ -1,4 +1,5 @@
 
+import Box from '../Box/Box'
 import Button from '../Button/Button'
 import Navbar from '../Navbar/Navbar'
 import './Home.css'
@@ -8,7 +9,9 @@ const Home = () => {
 
    
       <div className="home-main">
+      
       <Navbar/>
+       
     <div className="home-section1">
       <div className="home-txt-container">
         <div className="headding">
@@ -28,7 +31,22 @@ const Home = () => {
       </div>
     </div>
     {/* section 2 scrollbar start */}
-    
+      <div className="home-boxes">
+       <div className="home-box-title">
+       Top Courses
+       </div>
+       <div className="home-box">
+
+        <Box title='wwww' />
+        <Box title='wwww' />
+        <Box title='wwww' />
+        <Box title='wwww' />
+        <Box title='wwww' />
+       </div>
+       <div className="home-box-more-btn">
+        View Courses &gt;
+       </div>
+      </div>
       </div>
     </>
   )
