@@ -42,3 +42,12 @@ export interface CboxInterface{
     lesson:string
     payment:string
 }
+
+export interface syllobusInterface{
+    obj:{
+        title:string,
+        id:string,
+        arrayLesson:string[]
+    }
+    index:number
+}

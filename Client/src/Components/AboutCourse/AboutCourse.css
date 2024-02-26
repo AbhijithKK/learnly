@@ -1,0 +1,52 @@
+.abot-page-main{
+height: 100vh;
+width: 100%;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.about-vid-prev-main{
+height: 100vh;
+width: 60%;
+display: grid;
+}
+.vid-prev{
+height: 60vh;
+width: 95%;
+border-radius: 1rem;
+background-color: aqua;
+}
+.vid-prev video{
+height: 60%;
+width: 90%;
+border-radius: 1rem;
+}
+.vid-title{
+font-weight: bold;
+padding-top: -1rem;
+margin-bottom: -1rem;
+letter-spacing: 0.2rem;
+font-size: 1.3rem;
+}
+.vid-discription{
+max-width: 95%;
+line-height: 1.5rem;
+
+}
+.vid-prize-buynow{
+margin-top: -5rem;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.vid-prize{
+font-size: 1.8rem;
+font-style: italic;
+font-weight: bold;
+}
+.buy-btn{
+
+}
+
+
+

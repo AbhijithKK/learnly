@@ -1,3 +1,4 @@
+import AboutCourse from "./Components/AboutCourse/AboutCourse"
 import Box from "./Components/Box/Box"
 import Cbox from "./Components/CourseBox/Cbox"
 import Courses from "./Components/CoursePage/Courses"
@@ -17,7 +18,8 @@ function App() {
    {/* <Footer/> */}
    {/* <Home/> */}
    {/* <Cbox/> */}
-   <Courses/>
+   {/* <Courses/> */}
+   <AboutCourse/>
    
    </>
   )
