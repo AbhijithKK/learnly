@@ -43,7 +43,8 @@
  padding-top: 0.8rem;
  flex-grow: 1;
  
-
+transform: scale(1);
+transition:0.5s ease-in-out;
  
 }
 .syllobus-lesson-container{

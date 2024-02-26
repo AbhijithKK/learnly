@@ -6,13 +6,18 @@ const AboutCourse = () => {
   let syllobus: any = [
     {
       title: "abcd",
-      id: 1,
+      id: 0,
       arrayLesson: ["chaptrr-1", "chapter-2"],
     },
     {
       title: "abdd",
-      id: 2,
+      id: 1,
       arrayLesson: ["chaptrr-1", "chapter-2", "chaptrr-1", "chapter-2"],
+    },
+    {
+      title: "abcd",
+      id: 2,
+      arrayLesson: ["chaptrr-1", "chapter-2"],
     },
   ];
   return (

@@ -3,17 +3,20 @@ import { syllobusInterface } from '../../Utils/Interfaces'
 import './Syllobus.css'
 
 const Syllobus = ({obj,index}:syllobusInterface) => {
+  const [height,setHeight]=useState<boolean>(false)
     const [idm,setId]=useState<string>('all')
     const btnclick=(id:string)=>{
+console.log(idm);
 
       if(id==='all'){
         setId(id)
+        setHeight(true)
       }else{
         if (id===idm) {
           setId('all')
         }else{
           setId(id)
-
+          setHeight(true)
         }
       }
      
@@ -25,7 +28,7 @@ const Syllobus = ({obj,index}:syllobusInterface) => {
      
         <div className="syllobus-main" 
         style={{
-          height:`${5+obj.arrayLesson.length}rem`
+          height:height ? obj.id===idm ? `${5+obj.arrayLesson[parseInt(idm)]?.length-1}rem`:"5rem":"5rem"
         }}
         >
           <div className="syllobus-sub">
