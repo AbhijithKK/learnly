@@ -1,4 +1,5 @@
 import { syllobusInterface } from "../../Utils/Interfaces";
+import Button from "../Button/Button";
 import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
 import Syllobus from "../Syllobus/Syllobus";
@@ -40,7 +41,7 @@ const AboutCourse = () => {
           <div className="vid-prize-buynow">
             <div className="vid-prize">500</div>
             <div className="buy-btn">
-              <button>buy now</button>  
+              <Button bColor="blue" height="1.8rem" name="Buy now" width="6rem"/> 
             </div>
           </div>
           <div className="about-about-course-main">
