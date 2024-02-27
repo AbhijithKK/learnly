@@ -57,9 +57,7 @@ transition:0.5s ease-in-out;
 
  
 }
-.syllobus-lesson-container{
-    /* display: none; */
-}
+
 @media (max-width:650px) {
   .syllobus-lesson-main{
     background-color: rgb(89, 115, 145);
