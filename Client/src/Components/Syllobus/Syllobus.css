@@ -1,15 +1,18 @@
 /* syllobus section */
 .syllobus-main-container {
-  width: 40%;
+  width: 35%;
   height: 100vh;
+  /* overflow-x: hidden; */
+
 }
 .syllobus-main {
   display: grid;
-  width: 100%;
+  width: 95%;
   height: 5rem;
   align-items: center;
   margin-bottom: 0.8rem;
   margin-top: 0.9rem;
+  /* overflow-x: hidden; */
   
 }
 
@@ -27,7 +30,12 @@
   font-style: oblique;
   text-overflow: ellipsis;
 }
-.syllobus-drop-btn {
+.syllobus-drop-btn button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+
 }
 
 .syllobus-lesson-count {
@@ -45,8 +53,17 @@
  
 transform: scale(1);
 transition:0.5s ease-in-out;
+
+
  
 }
 .syllobus-lesson-container{
     /* display: none; */
+}
+@media (max-width:650px) {
+  .syllobus-lesson-main{
+    background-color: rgb(89, 115, 145);
+margin-left: 1.8rem;
+color: white;
+  }
 }

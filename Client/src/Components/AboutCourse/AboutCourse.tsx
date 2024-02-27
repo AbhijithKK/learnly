@@ -1,4 +1,6 @@
 import { syllobusInterface } from "../../Utils/Interfaces";
+import Footer from "../Footer/Footer";
+import Navbar from "../Navbar/Navbar";
 import Syllobus from "../Syllobus/Syllobus";
 import "./AboutCourse.css";
 
@@ -22,6 +24,7 @@ const AboutCourse = () => {
   ];
   return (
     <>
+    <Navbar/>
       <div className="abot-page-main">
         <div className="about-vid-prev-main">
           <div className="vid-prev">
@@ -37,17 +40,42 @@ const AboutCourse = () => {
           <div className="vid-prize-buynow">
             <div className="vid-prize">500</div>
             <div className="buy-btn">
-              <button>buy now</button>
+              <button>buy now</button>  
             </div>
           </div>
+          <div className="about-about-course-main">
+        <div className="about-about-sub">
+          <div className="about-about-headding">Author</div>
+          <div className="about-about-img-name">
+            <img src="" alt="image" />
+            <p>john</p>
+          </div>
+          <div className="about-about-discription">I will be your
+           lead trainer in this course. Within no time, I will help you to understand the subject in an easy manner. I have a huge 
+          experience in online training and recording videos.
+           Let's get started!</div>
         </div>
+        <div className="about-about-course-dis-main">
+          <div className="a-a-c-h">About This Course</div>
+          <div className="a-a-c-d">Javascript is doing way more than 
+          it was designed for. Now we can do all backend stuff with 
+          javascript. We will learn to write a complete backend code 
+          in modern javascript. First, we will start by setting up 
+          tools using VSCode. After that, we will learn to create our 
+          own web server without any third party module.</div>
+        </div>
+      </div>
+        </div>
+        
         <div className="syllobus-main-container">
-        {syllobus.map((obj, index) => (
-           
-                <Syllobus index={index+1} key={index} obj={obj} />
-                
-                ))}
-                </div>
+          {syllobus.map((obj, index) => (
+            <Syllobus index={index + 1} key={index} obj={obj} />
+          ))}
+        </div>
+      </div>
+     
+      <div className="courses-footer-mob-about">
+        <Footer />
       </div>
     </>
   );

@@ -4,11 +4,14 @@ width: 100%;
 display: flex;
 justify-content: space-around;
 align-items: center;
+margin-top: 4.5rem;
 }
+
 .about-vid-prev-main{
 height: 100vh;
-width: 60%;
+width: 55%;
 display: grid;
+
 }
 .vid-prev{
 height: 60vh;
@@ -23,8 +26,8 @@ border-radius: 1rem;
 }
 .vid-title{
 font-weight: bold;
-padding-top: -1rem;
-margin-bottom: -1rem;
+padding-top: 0.8rem;
+margin-bottom: 1rem;
 letter-spacing: 0.2rem;
 font-size: 1.3rem;
 }
@@ -34,7 +37,6 @@ line-height: 1.5rem;
 
 }
 .vid-prize-buynow{
-margin-top: -5rem;
 display: flex;
 justify-content: space-around;
 align-items: center;
@@ -49,4 +51,130 @@ font-weight: bold;
 }
 
 
+/* aboutt */
 
+.about-about-course-main{
+display: grid;
+margin-left: 0.8rem;
+margin-right: 0.8rem;
+}
+
+.about-about-sub{
+display: grid;
+}
+
+.about-about-headding{
+font-size: 1.5rem;
+margin-bottom: 0.6rem;
+font-weight: bold;
+}
+
+.about-about-img-name{
+    display: flex;
+align-items: center;
+margin-bottom: 0.8rem;
+}
+.about-about-img-name img{
+margin-right: 0.5rem;
+height: 3rem;
+width: 3rem;
+border-radius: 100%;
+border: 1px solid;
+}
+.about-about-img-name p{
+letter-spacing: 0.1rem;
+font-style: italic;
+text-transform: uppercase;
+}
+
+.about-about-discription{
+    max-width: 95%;
+line-height: 1.5rem;
+margin-bottom: 0.8rem;
+
+}
+
+
+
+.about-about-course-dis-main{
+display: grid;
+}
+
+.a-a-c-h{
+font-weight: bold;
+font-size: 1.2rem;
+margin-bottom: 0.8rem;
+}
+
+.a-a-c-d{
+    max-width: 95%;
+line-height: 1.5rem;
+   
+    margin-bottom: 0.8rem;
+}
+.courses-footer-mob-about{
+margin-top: 3rem;
+}
+@media (max-width:1000px) {
+    .courses-footer-mob-about{
+        margin-top: 18rem;
+        }
+}
+@media (max-width:850px) {
+    .courses-footer-mob-about{
+        margin-top: 14.5rem;
+        }
+}
+@media (max-width:650px) {
+    .abot-page-main{
+        display: grid;
+    }
+
+    .about-vid-prev-main{
+        height: 100vh;
+        width: 95%;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        margin-left: 1.7rem;
+        
+        }
+    .vid-prev video{
+        height: 60%;
+        width: 90%;
+        border-radius: 1rem;
+        }
+    .vid-prev{
+        height: 35vh;
+        width: 95%;
+        border-radius: 1rem;
+        background-color: aqua;
+        }
+        /* ============================= */
+        .syllobus-main-container {
+            width: 95%;
+            height: 10%;
+            margin-top: 2.8rem;
+            /* overflow-x: hidden; */
+          
+          }
+          .courses-footer-mob-about{
+            margin-top: 25.787rem;
+            margin-bottom: 3.5rem;
+            }
+}
+
+@media (max-width:340px) {
+    .syllobus-main-container {
+        width: 95%;
+        height: 10%;
+        margin-top: 8.8rem;
+        /* overflow-x: hidden; */
+        
+      
+      }
+      .courses-footer-mob-about{
+        margin-top: 33.787rem;
+        margin-bottom: 2rem;
+        }
+}
