@@ -105,3 +105,15 @@ margin-top: 2.3rem;
 overflow-x: hidden;
 
 }
+
+
+@media (max-width:880px) {
+    .pro-contain-2-inputbox{
+        display: grid;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 1.5rem;
+        overflow-x: hidden;
+    
+    }
+}
