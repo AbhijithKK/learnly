@@ -107,7 +107,10 @@ const ProfilePage = () => {
 
         
       </div>
+      <div className="pro-footer">
+
         <Footer/>
+      </div>
     </>
   );
 };
