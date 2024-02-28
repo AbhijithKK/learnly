@@ -1,4 +1,3 @@
-import { syllobusInterface } from "../../Utils/Interfaces";
 import Button from "../Button/Button";
 import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";

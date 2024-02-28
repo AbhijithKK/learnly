@@ -40,7 +40,7 @@ const Home = () => {
         <div className="home-boxes">
           <div className="home-box-title">Top Courses</div>
           <div className="home-box">
-            <Box title="wwww" />
+            <Box title="wwww"  />
             <Box title="wgj" />
             <Box title="wwww" />
             <Box title="wwww" />

@@ -6,6 +6,7 @@ import Footer from "./Components/Footer/Footer"
 import Home from "./Components/HomePage/Home"
 import Login from "./Components/LoginPage/Login"
 import Navbar from "./Components/Navbar/Navbar"
+import ProfilePage from "./Components/ProfilePage/ProfilePage"
 import Signup from "./Components/SignupPage/Signup"
 
 function App() {
@@ -19,8 +20,8 @@ function App() {
    {/* <Home/> */}
    {/* <Cbox/> */}
    {/* <Courses/> */}
-   <AboutCourse/>
-   
+   {/* <AboutCourse/> */}
+   <ProfilePage/>
    </>
   )
 }
