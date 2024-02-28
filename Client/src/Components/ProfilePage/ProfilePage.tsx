@@ -38,7 +38,7 @@ const ProfilePage = () => {
            
           </div>
           <div className="pro-password-btn">
-            <Button bColor="black" width="10rem" height="1.5rem" name="Change Password" />
+            <Button BtnClick={btn} bColor="black" width="10rem" height="1.5rem" name="Change Password" />
           </div>
         </div>
         <div className="profile-center">
