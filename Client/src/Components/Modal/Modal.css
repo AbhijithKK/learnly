@@ -1,0 +1,69 @@
+.modal-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255, 255, 255);
+  width: 40%;
+  height: 60%;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 15px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.modal-container.active {
+  opacity: 1;
+}
+
+.modal-head-section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 1rem;
+  font-weight: bold;
+}
+
+.modal-content-body {
+  overflow: scroll;
+}
+
+/* modal-profile-page */
+.modal-hedding {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.7rem;
+  font-family: sans-serif;
+  padding-top: 3.8rem;
+  padding-bottom: 1rem;
+}
+
+.inputbox-modal-password {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.modal-content-pro-page {
+  padding-top: 3.5rem;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+@media (max-width: 650px) {
+  .modal-container {
+    width: 90%;
+  }
+}

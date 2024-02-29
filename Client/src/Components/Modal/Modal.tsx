@@ -1,15 +1,21 @@
+import ReactDOM from "react-dom"
 import Button from "../Button/Button"
-
-const Modal = () => {
-  return (
+import './Modal.css'
+const Modal = ({html,closeFunc}) => {
+  return ReactDOM.createPortal (
     <>
-      <div className="modal-container">
+    <div className="modal-overlay">
+            <div className="modal-container active">
         <div className="modal-head-section">
-            <Button BtnClick='' bColor="black" height="0.5rem" width="0.8rem" name="X" />
+            <Button  BtnClick={closeFunc} bColor="black" height="1.2rem" width="1.2rem" name="X" />
         </div>
-        <div className="modal-content-body"></div>
+        <div className="modal-content-body">
+            {html}
+        </div>
       </div>
-    </>
+      </div>
+    </>,
+    document.body
   )
 }
 
