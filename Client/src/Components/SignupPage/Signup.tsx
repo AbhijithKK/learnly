@@ -34,7 +34,7 @@ const Signup = () => {
   </div>
   <div className="otp-modal-btn">
 
-  <Button bColor="blue" height="2rem" width="50%" name="Submit" />
+  <Button bColor="black" height="2rem" width="50%" name="Submit" />
   </div>
     </div>
   </>
