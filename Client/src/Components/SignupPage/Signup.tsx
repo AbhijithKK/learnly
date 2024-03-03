@@ -2,6 +2,8 @@ import Button from "../Button/Button";
 import InputBox from "../InputBox/InputBox";
 import LSpageTemplate from "../LoginAndSignupTemplate/LSpageTemplate";
 import { useForm } from "../../Utils/useForm";
+import { ReactNode, useState } from "react";
+import Modal from "../Modal/Modal";
 
 const Signup = () => {
   const [state, setFormVal] = useForm({
@@ -11,9 +13,31 @@ const Signup = () => {
     email: "",
     password: "",
   });
+  const [isOpen,setIsopen]=useState<boolean>(false)
   const Login = () => {
-    console.log(state);
+    setIsopen(!isOpen)
   };
+
+  const html:ReactNode=
+  <>
+  <div className="otp-modal-container">
+
+  <div className="otp-moda-title">
+    Verify OTP
+  </div>
+  <div className="inputbox-otp-modal">
+    <InputBox height="2rem" name="otp" type="text" width="90%" 
+    value={'112'} placeHolder="Enter OTP" />
+  </div>
+  <div className="opt-modal-timer">
+    cancel time 00.00
+  </div>
+  <div className="otp-modal-btn">
+
+  <Button bColor="blue" height="2rem" width="50%" name="Submit" />
+  </div>
+    </div>
+  </>
   return (
     <>
       <LSpageTemplate
@@ -79,6 +103,10 @@ const Signup = () => {
           />,
         ]}
       />
+      {
+        isOpen&&
+        <Modal  html={html} closeFunc={()=>setIsopen(!isOpen)} />
+      }
     </>
   );
 };

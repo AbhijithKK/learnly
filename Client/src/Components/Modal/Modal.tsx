@@ -1,7 +1,8 @@
 import ReactDOM from "react-dom"
 import Button from "../Button/Button"
 import './Modal.css'
-const Modal = ({html,closeFunc}) => {
+import { ModalInterface } from "../../Utils/Interfaces"
+const Modal = ({html,closeFunc}:ModalInterface) => {
   return ReactDOM.createPortal (
     <>
     <div className="modal-overlay">

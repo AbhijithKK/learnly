@@ -1,4 +1,4 @@
-import React from "react"
+import React, { ReactNode } from "react"
 
 
 export interface InputBoxInterface{
@@ -50,4 +50,10 @@ export interface syllobusInterface{
         arrayLesson:string[]
     }
     index:number
+}
+
+
+export interface ModalInterface{
+    html:ReactNode
+    closeFunc:()=>void
 }
