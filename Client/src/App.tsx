@@ -1,5 +1,6 @@
 import AboutCourse from "./Components/AboutCourse/AboutCourse"
 import Box from "./Components/Box/Box"
+import Cart from "./Components/CartPage/Cart"
 import Cbox from "./Components/CourseBox/Cbox"
 import Courses from "./Components/CoursePage/Courses"
 import Footer from "./Components/Footer/Footer"
@@ -14,7 +15,7 @@ function App() {
   return (
    <>
    {/* <Login/> */}
-   <Signup/>
+   {/* <Signup/> */}
    {/* <Navbar/> */}
    {/* <Footer/> */}
    {/* <Home/> */}
@@ -22,6 +23,7 @@ function App() {
    {/* <Courses/> */}
    {/* <AboutCourse/> */}
    {/* <ProfilePage/> */}
+   <Cart/>
    </>
   )
 }
