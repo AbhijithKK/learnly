@@ -8,6 +8,7 @@ import Home from "./Components/HomePage/Home"
 import Login from "./Components/LoginPage/Login"
 import Navbar from "./Components/Navbar/Navbar"
 import Payment from "./Components/PaymentPage/Payment"
+import PaySuccess from "./Components/PaymentSuccessPage/PaySuccess"
 import ProfilePage from "./Components/ProfilePage/ProfilePage"
 import Signup from "./Components/SignupPage/Signup"
 
@@ -25,7 +26,8 @@ function App() {
    {/* <AboutCourse/> */}
    {/* <ProfilePage/> */}
    {/* <Cart/> */}
-   <Payment/>
+   {/* <Payment/> */}
+   <PaySuccess/>
    </>
   )
 }
