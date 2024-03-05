@@ -1,11 +1,14 @@
 import Button from "../Button/Button";
+import Footer from "../Footer/Footer";
 import InputBox from "../InputBox/InputBox";
+import Navbar from "../Navbar/Navbar";
 import PaymentCbox from "../PaymentCbox/PaymentCob";
 import "./Payment.css";
 
 const Payment = () => {
   return (
     <>
+    <Navbar/>
       <div className="payment-container">
         <div className="payment-title">Checkout</div>
             <div className="payment-sub-container">
@@ -13,7 +16,7 @@ const Payment = () => {
         <div className="payment-section1">
           <div className="payment-address-inputpoxes">
             <div className="payment-inputbox-only">
-              <div className="payment-address">Fill the address</div>
+              <div className="payment-address">Billing address</div>
             <div>
 
             <select name="" id="">
@@ -32,6 +35,7 @@ const Payment = () => {
                 <option value="UAE">UP</option>
             </select>
             </div>
+            <p>Learnly is required by low to collect applicable ransaction taxes for purchases made in certain tax jurisdictions.</p>
             </div>
           </div>
           <div className="payment-order-details">
@@ -82,10 +86,13 @@ const Payment = () => {
             
           </div>
           <div className="payment-complete-checkout-btn">
-            <Button bColor="black" height="3rem" name="Checkout All" width="100%"  />
+            <Button bColor="black" height="3rem" name="Complete Checkout" width="100%"  />
           </div>
             </div>
         </div>
+      </div>
+      <div className="payment-footer">
+        <Footer/>
       </div>
     </>
   );
