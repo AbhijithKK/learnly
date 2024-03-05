@@ -35,6 +35,7 @@ const Payment = () => {
             </div>
           </div>
           <div className="payment-order-details">
+            <p className="title">Order details</p>
             <PaymentCbox hedding="web devolpoment" lesson="15 Lessons" payment="1000" discription="" image=""/>
             <PaymentCbox hedding="web devolpoment" lesson="15 Lessons" payment="1000" discription="" image=""/>
             <PaymentCbox hedding="web devolpoment" lesson="15 Lessons" payment="1000" discription="" image=""/>
@@ -80,7 +81,9 @@ const Payment = () => {
             </div>
             
           </div>
-          <div className="payment-complete-checkout-btn"></div>
+          <div className="payment-complete-checkout-btn">
+            <Button bColor="black" height="3rem" name="Checkout All" width="100%"  />
+          </div>
             </div>
         </div>
       </div>

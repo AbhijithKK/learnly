@@ -32,23 +32,23 @@ align-items: center;
     margin-left: 1rem;
     border: 1px solid;
     padding-left: 1rem;
+    padding-right: 1rem;
     padding-top: 0.5rem;
     border-radius: 0.3rem;
     height: 11rem;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+    column-gap: 1rem;
 
 }
 .payment-inputbox-only select{
-    width: 24rem;
+    width: 100%;
     height: 2.5rem;
     margin-bottom: 1rem;
     border-radius: 1rem;
     outline: none;
     cursor: pointer;
 }
-.payment-inputbox-only select option:hover{
-border-radius: 1rem;
-cursor: pointer;
-}
+
 .payment-address{
     font-weight: bold;
     padding-bottom: 1rem;
@@ -58,6 +58,7 @@ width: 100%;
 display: grid;
 row-gap: 1rem;
 margin-bottom: 1rem;
+column-gap: 1rem;
 }
 
 .payment-order-details{
@@ -112,5 +113,62 @@ margin: 0rem 0rem 1rem 0rem;
 }
 
 .payment-complete-checkout-btn{
+margin-top: 1rem;
+}
+@media (max-width:700px) {
 
+    .payment-title{
+        font-size: 2rem;
+        font-weight: bold;
+
+text-align: center;        margin-bottom: 2rem;
+        }
+    .payment-sub-container{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        row-gap: 1rem;
+    
+    }
+    .payment-section1{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        }
+
+        .payment-inputbox-only{
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+            margin-left: 0rem;
+
+        }
+
+        .payment-address{
+            font-weight: bold;
+            padding-bottom: 1rem;
+            text-align: center;
+        }
+   
+
+
+        /* section 2 styless */
+
+.payment-section2{
+    width: 100%;
+
+}
+.payment-order-details .title{
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+}
 }
