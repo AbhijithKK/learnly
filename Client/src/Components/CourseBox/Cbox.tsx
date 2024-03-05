@@ -15,7 +15,7 @@ const Cbox = ({image,hedding,discription,lesson,payment}:CboxInterface) => {
         </p>
         <div className="cb-prize">
             <p>{lesson}</p>
-            <p>₹{payment}</p>
+            <p>{payment!=='Ready to Watch'?`₹${payment}`:payment}</p>
         </div>
       </div>
     </div>

@@ -7,6 +7,7 @@ import Footer from "./Components/Footer/Footer"
 import Home from "./Components/HomePage/Home"
 import Login from "./Components/LoginPage/Login"
 import Mycourses from "./Components/MyCourseVideoplay/MycouseVidPlay"
+import MyCourses from "./Components/MyCourses/MyCourses"
 import Navbar from "./Components/Navbar/Navbar"
 import Payment from "./Components/PaymentPage/Payment"
 import PaySuccess from "./Components/PaymentSuccessPage/PaySuccess"
@@ -29,7 +30,8 @@ function App() {
    {/* <Cart/> */}
    {/* <Payment/> */}
    {/* <PaySuccess/> */}
-   <Mycourses/>
+   {/* <Mycourses/> */}
+   <MyCourses/>
    </>
   )
 }
