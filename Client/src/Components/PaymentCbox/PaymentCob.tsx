@@ -13,27 +13,18 @@ const PaymentCbox = ({
 }: CboxInterface) => {
   return (
     <div
-      className="cb-container"
-      style={{
-        boxShadow: "0px 0px 0px",
-        width: "90%",
-      }}
+      className="cb-container payment-cb-container"
+    
     >
       <div className="cb-image cb-img-payment">
         <img
           src={image ? image : dummyimg}
           alt="imagess"
-          style={{
-            height: "8rem",
-            width: "14rem",
-          }}
+      
         />
       </div>
       <div className="cb-text-main">
-        <h2 className="cb-headding" style={{
-            paddingBottom:" 1.9rem"
-
-        }}>{hedding}</h2>
+        <h2 className="cb-headding payment-cb-hedding" >{hedding}</h2>
         {/* <p className="cb-discription">{discription}</p> */}
         <div className="cb-prize">
           <p>{lesson}</p>

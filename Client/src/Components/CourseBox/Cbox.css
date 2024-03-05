@@ -45,6 +45,29 @@
   font-weight: bold;
 }
 
+
+
+
+/* payment-page */
+
+.payment-cb-container{
+  box-shadow: 0px 0px 0px;
+  width: 90%;
+  height: 8rem ;
+}
+.payment-cb-hedding{
+
+  padding-bottom: 0.0rem;
+}
+.cb-img-payment img{
+  height: 5rem;
+  width: 8rem;
+}
+
+
+
+
+
 @media (max-width: 600px) {
   .cb-container {
     width: 80%;
