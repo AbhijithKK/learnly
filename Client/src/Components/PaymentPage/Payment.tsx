@@ -1,4 +1,4 @@
-import Cbox from "../CourseBox/Cbox";
+import PaymentCbox from "../PaymentCbox/PaymentCob";
 import "./Payment.css";
 
 const Payment = () => {
@@ -30,8 +30,8 @@ const Payment = () => {
             </div>
           </div>
           <div className="payment-order-details">
-            <Cbox hedding="web devolpoment" lesson="15 Lessons" payment="1000" discription="" image=""/>
-            <Cbox hedding="web devolpoment" lesson="15 Lessons" payment="1000" discription="" image=""/>
+            <PaymentCbox hedding="web devolpoment" lesson="15 Lessons" payment="1000" discription="" image=""/>
+            {/* <Cbox hedding="web devolpoment" lesson="15 Lessons" payment="1000" discription="" image=""/> */}
           </div>
         </div>
 

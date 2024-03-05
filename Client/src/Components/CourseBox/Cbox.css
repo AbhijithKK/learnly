@@ -62,6 +62,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    
   }
   .cb-headding {
     text-align: center;
@@ -72,5 +73,10 @@
     height: auto;
     width: 95%;
     border-radius: 1rem;
+  }
+  .cb-img-payment{
+    margin-bottom: -7rem;
+    padding-left: 1rem;
+
   }
 }
