@@ -1,9 +1,9 @@
 import Footer from '../Footer/Footer';
 import Navbar from '../Navbar/Navbar';
 import Syllobus from '../Syllobus/Syllobus';
-import './Mycourses.css'
+import './MyCourseVidPlay.css'
 
-const Mycourses = () => {
+const MycoursesVidPlay = () => {
     let syllobus: any = [
         {
           title: "abcd",
@@ -43,4 +43,4 @@ const Mycourses = () => {
   )
 }
 
-export default Mycourses
+export default MycoursesVidPlay
