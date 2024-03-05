@@ -6,6 +6,7 @@ import Courses from "./Components/CoursePage/Courses"
 import Footer from "./Components/Footer/Footer"
 import Home from "./Components/HomePage/Home"
 import Login from "./Components/LoginPage/Login"
+import Mycourses from "./Components/MyCoursePage/Mycourses"
 import Navbar from "./Components/Navbar/Navbar"
 import Payment from "./Components/PaymentPage/Payment"
 import PaySuccess from "./Components/PaymentSuccessPage/PaySuccess"
@@ -27,7 +28,8 @@ function App() {
    {/* <ProfilePage/> */}
    {/* <Cart/> */}
    {/* <Payment/> */}
-   <PaySuccess/>
+   {/* <PaySuccess/> */}
+   <Mycourses/>
    </>
   )
 }

@@ -1,0 +1,25 @@
+.my-courses-countainer{
+    display: grid;
+width: 100%;
+align-items: center;
+margin-top: 4rem;
+}
+
+.my-course-video-wall{   
+height: 60vh;
+background-color: aqua;
+width: 100%;
+margin-bottom: 3rem;
+}
+.my-course-video-wall video{
+    width: 100%;
+}
+.my-courses-syllobus{
+
+}
+
+@media (max-width:500px) {
+    .my-course-footer{
+    margin-bottom: 3rem;
+    }
+}
