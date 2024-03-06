@@ -24,6 +24,8 @@ const ConversationBox = () => {
         <div className="chat-page-dialogs">
             <DialogBox/>
         </div>
+        
+        
         <div className="chat-page-footer">
           <div className="media-selector">
             <InputBox height="2rem" type="file" width="3.8rem" />
