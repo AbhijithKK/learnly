@@ -1,0 +1,96 @@
+.community-container{
+display: flex;
+height: 100vh;
+width: 100%;
+align-items: center;
+justify-content: center;
+}
+.community-left-side{
+height: 100vh;
+width: 30%;
+background-color: bisque;
+}
+.create-community{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+    row-gap: 1rem;
+    
+}
+.show-community-chats{
+    overflow: hidden;
+    overflow-y: scroll;
+    /* height: 100vh; */
+}
+.chat-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sub-chat-conainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.8rem;
+}
+.chat-image-profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.chat-image-profile img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100%;
+}
+.chat-user-details{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    row-gap: 0.5rem;
+}
+.chat-upper-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 0.8rem;
+    width: 100%;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+
+}
+.chat-upper-details .user-name{
+    font-weight: bold;
+}
+.chat-upper-details .date{
+font-style: italic;
+background-color: green;
+color: white;
+border-radius: 0.3rem;
+}
+.chat-upper-details .last-message{
+    max-width: 7.5rem;
+    text-overflow: ellipsis;
+}
+.chat-upper-details .without-read-count{
+    width: 2rem;
+    height: 1.1rem;
+    border-radius: 100%;
+    color: #ffff;
+    text-align: center;
+    background-color: green;
+    
+}
+.chat-upper-details .content-read{
+    display: none;
+}
+.chat-box-outerline{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.community-right-side{
+    height: 100vh;
+    width: 70%;
+    background-color: rgb(199, 126, 37);
+}
