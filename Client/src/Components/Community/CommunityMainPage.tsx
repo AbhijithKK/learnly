@@ -2,6 +2,7 @@ import Button from "../Button/Button";
 import InputBox from "../InputBox/InputBox";
 import ChatBox from "./ChatBox";
 import "./Community.css";
+import ConversationBox from "./ConversationBox";
 const CommunityMainPage = () => {
   return (
     <>
@@ -31,8 +32,11 @@ const CommunityMainPage = () => {
             </div>
           </div>
         </div>
-        <div className="community-right-side"></div>
-      </div>
+        <div className="community-right-side">
+            <ConversationBox/>
+            </div>
+        </div>
+     
     </>
   );
 };
