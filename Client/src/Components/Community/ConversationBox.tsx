@@ -2,7 +2,9 @@ import "./Community.css";
 import Button from "../Button/Button";
 import InputBox from "../InputBox/InputBox";
 import DialogBox from "./DialogBox";
-const ConversationBox = () => {
+const ConversationBox = ({data}) => {
+    console.log(data);
+    
   return (
     <>
       <div className="chat-page-container">
@@ -12,8 +14,8 @@ const ConversationBox = () => {
               <img src="" alt="" />
             </div>
             <div className="head-profile-name">
-              <p>abcd</p>
-              <p>last seen</p>
+              <p>{data.name}</p>
+              <p>{data.lastMessageTime}</p>
             </div>
           </div>
           <div className="chat-page-head-right-side">
@@ -22,7 +24,7 @@ const ConversationBox = () => {
         </div>
 
         <div className="chat-page-dialogs">
-            <DialogBox/>
+            <DialogBox senderId={data.id} chat={data.previousMessages} />
         </div>
         
         

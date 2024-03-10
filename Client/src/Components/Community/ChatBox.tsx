@@ -1,12 +1,12 @@
 import './Community.css'
 import imgg from '../../assets/home2.jpg'
 
-const ChatBox = () => {
+const ChatBox = ({image,name,lastMsgTime,lastMessage,id ,idPicker}) => {
   return (
     <>
       
-                <hr className='chat-box-outerline' />
-              <div className="chat-container">
+                <hr className='chat-box-outerline'  />
+              <div className="chat-container" onClick={()=>idPicker(id)}>
                 <div className="sub-chat-conainer">
                     <div className="chat-image-profile">
                   <img src={imgg} alt="" />
@@ -14,11 +14,11 @@ const ChatBox = () => {
                     <div className="chat-user-details">
 
                   <div className="chat-upper-details">
-                    <p className="user-name">abhi</p>
-                    <p className="date">jusr now</p>
+                    <p className="user-name">{name}</p>
+                    <p className="date">{lastMsgTime}</p>
                   </div>
                   <div className="chat-upper-details">
-                    <p className="last-message">last  messagejjjjjjjjjjjjjjjjjjjjjjjjjmmmmmmmmm</p>
+                    <p className="last-message">{lastMessage}</p>
                     <p className="without-read-count
                     ">
                         {/* content-read */}

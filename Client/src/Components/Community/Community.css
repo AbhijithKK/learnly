@@ -27,6 +27,7 @@ background-color: bisque;
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 .sub-chat-conainer{
     display: flex;
@@ -175,7 +176,7 @@ overflow-y: scroll;
 
 .chat-page-dialogs{
     width: 100%;
-    display: flex;
+    /* display: grid; */
     align-items: center;
     justify-content: space-between;
     overflow-y: scroll;
@@ -183,18 +184,22 @@ overflow-y: scroll;
     background-color:blueviolet ;
     margin-top: 3.5rem;
     margin-bottom: 3rem;
+    height: 90vh;
     
 }
-
+.chat-single-box{
+    /* display: grid; */
+    width: 100%;
+}
 .dialogbox-left-side{
-    width: 45%;
+    width: 100%;
     display: grid;
     align-items: center;
     justify-content: flex-start;
-    
+    margin-left: 0.8rem;
 }
 .dialogbox-right-side{
-    width: 45%;
+    width: 100%;
     display: grid;
     align-items: center;
     justify-content: flex-end;

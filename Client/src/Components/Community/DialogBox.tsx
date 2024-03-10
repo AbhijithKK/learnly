@@ -1,34 +1,23 @@
-import './Community.css'
+import "./Community.css";
 
-const DialogBox = () => {
+const DialogBox = ({ chat, senderId }) => {
   return (
     <>
-        <div className="dialogbox-left-side">
-            <p>dscddscdscdscdcdscdcdcddcddc</p>
-            <p>dscddscdscdscdcdscdcdcddcddc</p>
-            <p>dscddscdscdscdcdscdcdcddcddc</p>
-
-        </div>
-        <div className="dialogbox-right-side">
-            <p>qqqqqqqqqqqqqqjjqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqddddddddddddddddddddddddddddddddddddddddddd</p>
-            <p>ddddddddddddddddddddddddddddddddddddddddddd</p>
-            <p>ddddddddddddddddddddddddddddddddddddddddddd</p>
-            <p>ddddddddddddddddddddddddddddddddddddddddddd</p>
-            <p>ddddddddddddddddddddddddddddddddddddddddddd</p>
-            <p>ddddddddddddddddddddddddddddddddddddddddddd</p>
-            <p>ddddddddddddddddddddddddddddddddddddddddddd</p>
-            <p>ddddddddddddddddddddddddddddddddddddddddddd</p>
-            <p>ddddddddddddddddddddddddddddddddddddddddddd</p>
-            <p>ddddddddddddddddddddddddddddddddddddddddddd</p>
-            <p>ddddddddddddddddddddddddddddddddddddddddddd</p>
-            <p>ddddddddddddddddddddddddddddddddddddddddddd</p>
-            <p>ddddddddddddddddddddddddddddddddddddddddddd</p>
-            <p>ddddddddddddddddddddddddddddddddddddddddddd</p>
-            <p>zzzzzzzzzzzzzzzzzzzzzddddddddddddddddddddddddddddddddddddddddddd</p>
-        </div>
-      
+      {chat?.map((val, i) => (
+        // <div className="chat-single-box" key={i}>
+          <div
+            className={
+              senderId === val.sender_id
+                ? "dialogbox-right-side"
+                : "dialogbox-left-side"
+            }
+          >
+            <p>{val.message}</p>
+          </div>
+        // </div>
+      ))}
     </>
-  )
-}
+  );
+};
 
-export default DialogBox
+export default DialogBox;
