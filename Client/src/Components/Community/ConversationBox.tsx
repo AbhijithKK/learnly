@@ -2,16 +2,21 @@ import "./Community.css";
 import Button from "../Button/Button";
 import InputBox from "../InputBox/InputBox";
 import DialogBox from "./DialogBox";
-const ConversationBox = ({data,gobackBtn}) => {
-    console.log(data);
-    
+const ConversationBox = ({ data, gobackBtn }) => {
+  console.log(data);
+
   return (
     <>
       <div className="chat-page-container">
         <div className="chat-page-head">
           <div className="chat-page-head-left-side">
             <div className="chat-page-head-image">
-              <img className="goback-image" src="" onClick={gobackBtn} alt="goback" />
+              <img
+                className="goback-image"
+                src=""
+                onClick={gobackBtn}
+                alt="goback"
+              />
               <img src="" alt="" />
             </div>
             <div className="head-profile-name">
@@ -23,20 +28,16 @@ const ConversationBox = ({data,gobackBtn}) => {
             <div className="options">3dots</div>
           </div>
         </div>
-        {
-          data.length===0 ?
+        {data.length === 0 ? (
           <div className="chat-page-dialogs dialogtext-decaration-chat">
-         <p>(Click the conversation box and start chat...)</p>
-        </div>:
-        <div className="chat-page-dialogs">
-          
-        <DialogBox senderId={data.id} chat={data.previousMessages} />
-    </div>
-        }
-        
-        
-        
-        
+            <p>(Click the conversation box and start chat...)</p>
+          </div>
+        ) : (
+          <div className="chat-page-dialogs">
+            <DialogBox senderId={data.id} chat={data.previousMessages} />
+          </div>
+        )}
+
         <div className="chat-page-footer">
           <div className="media-selector">
             <InputBox height="2rem" type="file" width="3.8rem" />
