@@ -10,29 +10,37 @@ height: 100vh;
 width: 30%;
 background-color: bisque;
 }
+.community-left-side-block{
+    height: 100vh;
+width: 30%;
+background-color: bisque;
+}
 .create-community{
     display: grid;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    
     padding-top: 2rem;
     row-gap: 1rem;
-    
+    width: 100%;
 }
 .show-community-chats{
     overflow: hidden;
     overflow-y: scroll;
     /* height: 100vh; */
+    width: 100%;
 }
 .chat-container{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     cursor: pointer;
+    width: 100%;
 }
 .sub-chat-conainer{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     column-gap: 0.8rem;
 }
 .chat-image-profile{
@@ -181,7 +189,7 @@ overflow-y: scroll;
     justify-content: space-between;
     overflow-y: scroll;
     column-gap: 1rem;
-    background-color:blueviolet ;
+    background-color:rgba(129, 123, 134, 0.603) ;
     margin-top: 3.5rem;
     margin-bottom: 3rem;
     height: 90vh;
@@ -219,4 +227,109 @@ overflow-y: scroll;
     border-radius: 0.2rem;
     margin-top: 0.3rem;
 
+}
+.goback-image{
+    display: none;
+}
+.goback-home-btn{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+.community-right-side-block .chat-page-head {
+display: none;
+}
+.community-right-side-block .chat-page-footer {
+display: none;
+}
+.dialogtext-decaration-chat{
+    width: 70vw;
+    height: 109vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: -0.1rem;
+
+}
+
+@media (max-width:700px) {
+    .community-left-side{
+        height: 100vh;
+        width: 100%;
+        background-color: bisque;
+        
+        }
+        .community-right-side{
+            height: 100vh;
+            width: 100%;
+            background-color: rgb(199, 126, 37);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+            
+        }
+        .community-left-side-block{
+            height: 100vh;
+        width: 100%;
+        background-color: bisque;
+            display: none;
+        }
+        .community-right-side-block{
+            height: 100vh;
+            width: 100%;
+            background-color: rgb(199, 126, 37);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+            display: none;
+        }
+
+
+        .chat-page-head{
+            height: 3.5rem;
+            background-color: gray;
+            position: fixed;
+            top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            column-gap: 3rem;
+        }
+
+        .chat-page-footer{
+            height: 3rem;
+            background-color: gray;
+            position: fixed;
+            bottom: 0;
+            
+            width: 100%;
+            column-gap: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .goback-image{
+            display: block;
+            cursor: pointer;
+        }
+
+        .show-community-chats{
+            /* overflow: hidden; */
+            /* overflow-y: scroll; */
+            /* height: 100vh; */
+            width: 100vw;
+            /* background-color: aqua; */
+        }
+        .community-create-community-btn{
+            display: grid;
+            width: 100%;
+            align-items: center;
+           
+            justify-content: center;
+        }
+        
 }

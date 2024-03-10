@@ -2,7 +2,7 @@ import "./Community.css";
 import Button from "../Button/Button";
 import InputBox from "../InputBox/InputBox";
 import DialogBox from "./DialogBox";
-const ConversationBox = ({data}) => {
+const ConversationBox = ({data,gobackBtn}) => {
     console.log(data);
     
   return (
@@ -11,6 +11,7 @@ const ConversationBox = ({data}) => {
         <div className="chat-page-head">
           <div className="chat-page-head-left-side">
             <div className="chat-page-head-image">
+              <img className="goback-image" src="" onClick={gobackBtn} alt="goback" />
               <img src="" alt="" />
             </div>
             <div className="head-profile-name">
@@ -22,10 +23,18 @@ const ConversationBox = ({data}) => {
             <div className="options">3dots</div>
           </div>
         </div>
-
+        {
+          data.length===0 ?
+          <div className="chat-page-dialogs dialogtext-decaration-chat">
+         <p>(Click the conversation box and start chat...)</p>
+        </div>:
         <div className="chat-page-dialogs">
-            <DialogBox senderId={data.id} chat={data.previousMessages} />
-        </div>
+          
+        <DialogBox senderId={data.id} chat={data.previousMessages} />
+    </div>
+        }
+        
+        
         
         
         <div className="chat-page-footer">

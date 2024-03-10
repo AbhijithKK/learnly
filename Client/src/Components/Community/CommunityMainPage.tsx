@@ -54,20 +54,85 @@ setConversationData(data)
         },
     ]
     
-    }]
-    
+    },
+    {
+      id:2,
+      image:null,
+  name:'rahul',
+  lastMessageTime:'just now',
+  lastMessage:'hii da',
+  unreadMessageCount:'5',
+  previousMessages:[
+      {
+          sender_id:2,
+          receiver_id:1,
+          message:'hlooo',
+          timestamp:12
+      },
+      {
+          sender_id:2,
+          receiver_id:1,
+          message:'hiiii',
+          timestamp:13
+
+      },
+      {
+          sender_id:1,
+          receiver_id:2,
+          message:'sender',
+          timestamp:17
+
+      },
+      {
+          sender_id:2,
+          receiver_id:1,
+          message:'sender',
+          timestamp:17
+
+      },
+      {
+          sender_id:1,
+          receiver_id:2,
+          message:'sender',
+          timestamp:17
+
+      },
+  ]
+  
+  }]
+    const gobackBtn=()=>{
+      setConversationData([])
+    }
     
   return (
     <>
       <div className="community-container">
-        <div className="community-left-side">
+        <div className=
+        {
+          conversationData.length===0?
+          "community-left-side":
+          "community-left-side-block"
+        }
+        
+        >
           <div className="create-community">
+            <div className="goback-home-btn">
+            <Button
+              bColor="black"
+              height="3rem"
+              name="&nbsp; Go to home &nbsp;"
+              width="150%"
+            />
+            </div>
+            <div className="community-create-community-btn">
             <Button
               bColor="green"
               height="3rem"
-              name="Create new Community"
+              name="&nbsp; Create new Community &nbsp;"
               width="100%"
             />
+            </div>
+            
             <div className="community-people-search">
               <InputBox
                 height="2rem"
@@ -96,9 +161,13 @@ setConversationData(data)
             </div>
           </div>
         </div>
-        <div className="community-right-side">
+        <div className=
+        {
+          conversationData.length!==0?
+        "community-right-side":
+        "community-right-side-block"}>
            
-<ConversationBox data={conversationData}  />
+<ConversationBox data={conversationData}gobackBtn={gobackBtn}  />
               
             </div>
         </div>
