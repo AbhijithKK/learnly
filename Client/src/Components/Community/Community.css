@@ -163,6 +163,9 @@
 .chat-page-head-right-side .options {
   font-weight: bold;
 }
+.chat-page-head-right-side .options img{
+cursor: pointer;
+}
 
 .chat-page-footer {
   height: 3rem;
@@ -224,9 +227,14 @@
   display: none;
 }
 .goback-home-btn {
-  display: flex;
+  display: grid;
   align-items: center;
-  justify-self: center;
+  justify-content: center;
+}
+.goback-home-btn p{
+    text-align: center;
+    text-decoration: underline;
+    color: blue;
 }
 .community-right-side-block .chat-page-head {
   display: none;
@@ -245,6 +253,34 @@
   margin-top: -0.1rem;
 }
 
+
+.chat-file-upload-img{
+display: flex;
+align-items: center;
+justify-content: center;
+position: absolute;
+cursor: pointer;
+
+
+}
+.chat-file-upload-img img{
+height: 2.3rem;
+cursor: pointer;
+
+}
+.chat-file-upload-input-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    cursor: pointer;
+
+}
 @media (max-width: 700px) {
   .community-left-side {
     height: 100vh;

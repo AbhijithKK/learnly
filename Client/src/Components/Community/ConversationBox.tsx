@@ -1,6 +1,9 @@
 import "./Community.css";
 import Button from "../Button/Button";
 import InputBox from "../InputBox/InputBox";
+import optionmenu from '../../assets/icons8-menu-vertical-50.png'
+import backImg from '../../assets/icons8-back-arrow-50.png'
+import ImgAdder from '../../assets/icons8-image-file-add-64.png'
 import DialogBox from "./DialogBox";
 const ConversationBox = ({ data, gobackBtn }) => {
   console.log(data);
@@ -13,7 +16,7 @@ const ConversationBox = ({ data, gobackBtn }) => {
             <div className="chat-page-head-image">
               <img
                 className="goback-image"
-                src=""
+                src={backImg}
                 onClick={gobackBtn}
                 alt="goback"
               />
@@ -25,7 +28,9 @@ const ConversationBox = ({ data, gobackBtn }) => {
             </div>
           </div>
           <div className="chat-page-head-right-side">
-            <div className="options">3dots</div>
+            <div className="options">
+              <img src={optionmenu} alt="menu" />
+            </div>
           </div>
         </div>
         {data.length === 0 ? (
@@ -40,7 +45,12 @@ const ConversationBox = ({ data, gobackBtn }) => {
 
         <div className="chat-page-footer">
           <div className="media-selector">
-            <InputBox height="2rem" type="file" width="3.8rem" />
+            <div className="chat-file-upload-img">
+              <img src={ImgAdder} alt="" />
+            </div>
+            <div className="chat-file-upload-input-box">
+            <InputBox height="2rem" type="file" width="2.25rem" />
+            </div>
           </div>
           <div className="chat-inputbox">
             <InputBox height="2rem" type="text" width="100%" />

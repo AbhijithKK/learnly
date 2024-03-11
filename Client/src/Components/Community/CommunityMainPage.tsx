@@ -2,6 +2,7 @@ import { useState } from "react";
 import Button from "../Button/Button";
 import InputBox from "../InputBox/InputBox";
 import ChatBox from "./ChatBox";
+import homelogo from '../../assets/icons8-home-50.png'
 import "./Community.css";
 import ConversationBox from "./ConversationBox";
 const CommunityMainPage = () => {
@@ -108,12 +109,9 @@ const CommunityMainPage = () => {
         >
           <div className="create-community">
             <div className="goback-home-btn">
-              <Button
-                bColor="black"
-                height="3rem"
-                name="&nbsp; Go to home &nbsp;"
-                width="150%"
-              />
+              
+              <img src={homelogo} alt="home" />
+              <p>Go home</p>
             </div>
             <div className="community-create-community-btn">
               <Button
