@@ -8,8 +8,8 @@ import ConversationBox from "./ConversationBox";
 import Modal from "../Modal/Modal";
 const CommunityMainPage = () => {
   const [conversationData, setConversationData] = useState<any>([]);
-  const conversationSetter = (id) => {
-    const data = arr.find((val) => val.id == id);
+  const conversationSetter = (id:number) => {
+    const data = arr.find((val:any) => val.id == id);
     setConversationData(data);
   };
   let arr: any = [

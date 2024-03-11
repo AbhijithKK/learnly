@@ -7,7 +7,8 @@ import ImgAdder from '../../assets/icons8-image-file-add-64.png'
 import DialogBox from "./DialogBox";
 import { useState } from "react";
 import Modal from "../Modal/Modal";
-const ConversationBox = ({ data, gobackBtn }) => {
+import { ConversationboxInterface } from "../../Utils/Interfaces";
+const ConversationBox = ({ data, gobackBtn }:ConversationboxInterface) => {
   const [menuIsopen,SemenuIsopen]=useState<boolean>(false)
   const menuoptionModal = () => {
     SemenuIsopen(!menuIsopen)

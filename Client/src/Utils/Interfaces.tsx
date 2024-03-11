@@ -57,3 +57,34 @@ export interface ModalInterface{
     html:ReactNode
     closeFunc:()=>void
 }
+
+export interface ConversationboxInterface{
+    gobackBtn:()=>void
+    data:{
+        name:string
+        lastMessageTime:string
+        id:number
+        previousMessages:[{
+            sender_id: number
+          receiver_id: number
+          message: string
+          timestamp: number
+        }]
+    }
+}
+export interface chatboxInterface{
+    image:string|null
+    name:string
+     lastMsgTime:string
+      lastMessage:string
+       id:number
+        idPicker:(id:number)=>void
+}
+export interface dialogboxInterface{
+    chat:[{
+        sender_id:number
+        receiver_id:number
+        message:string
+    } ]
+    senderId:number
+}

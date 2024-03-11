@@ -1,7 +1,8 @@
 import "./Community.css";
 import imgg from "../../assets/home2.jpg";
+import { chatboxInterface } from "../../Utils/Interfaces";
 
-const ChatBox = ({ image, name, lastMsgTime, lastMessage, id, idPicker }) => {
+const ChatBox = ({ image, name, lastMsgTime, lastMessage, id, idPicker }:chatboxInterface) => {
   return (
     <>
       <hr className="chat-box-outerline" />
