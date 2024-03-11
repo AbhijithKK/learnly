@@ -5,6 +5,7 @@ import ChatBox from "./ChatBox";
 import homelogo from '../../assets/icons8-home-50.png'
 import "./Community.css";
 import ConversationBox from "./ConversationBox";
+import Modal from "../Modal/Modal";
 const CommunityMainPage = () => {
   const [conversationData, setConversationData] = useState<any>([]);
   const conversationSetter = (id) => {
@@ -96,6 +97,14 @@ const CommunityMainPage = () => {
   const gobackBtn = () => {
     setConversationData([]);
   };
+  const [communityIsopen,SetcommunityIsopen]=useState<boolean>(false)
+  const [userListIsopen,SetuserlistIsopen]=useState<boolean>(false)
+  const createCommunityModal = () => {
+    SetcommunityIsopen(!communityIsopen)
+  };
+  const userListModal = () => {
+    SetuserlistIsopen(!userListIsopen)
+  };
 
   return (
     <>
@@ -119,6 +128,7 @@ const CommunityMainPage = () => {
                 height="3rem"
                 name="&nbsp; Create new Community &nbsp;"
                 width="100%"
+                BtnClick={createCommunityModal}
               />
             </div>
 
@@ -131,7 +141,9 @@ const CommunityMainPage = () => {
                 value={""}
                 width="75%"
               />
-              <Button bColor="blue" height="2rem" name="Search" width="25%" />
+              <Button bColor="blue" height="2rem" name="Search" width="25%" 
+              BtnClick={userListModal}
+              />
             </div>
             <div className="show-community-chats">
               {arr.map((val, i) => (
@@ -144,7 +156,7 @@ const CommunityMainPage = () => {
                   key={i}
                 />
               ))}
-              {/* <ChatBox/> */}
+              
             </div>
           </div>
         </div>
@@ -158,6 +170,14 @@ const CommunityMainPage = () => {
           <ConversationBox data={conversationData} gobackBtn={gobackBtn} />
         </div>
       </div>
+      {
+        communityIsopen&&
+        <Modal closeFunc={createCommunityModal} html />
+      }
+      {
+        userListIsopen&&
+        <Modal closeFunc={userListModal} html />
+      }
     </>
   );
 };

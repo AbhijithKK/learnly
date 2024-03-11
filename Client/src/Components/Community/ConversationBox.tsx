@@ -5,9 +5,13 @@ import optionmenu from '../../assets/icons8-menu-vertical-50.png'
 import backImg from '../../assets/icons8-back-arrow-50.png'
 import ImgAdder from '../../assets/icons8-image-file-add-64.png'
 import DialogBox from "./DialogBox";
+import { useState } from "react";
+import Modal from "../Modal/Modal";
 const ConversationBox = ({ data, gobackBtn }) => {
-  console.log(data);
-
+  const [menuIsopen,SemenuIsopen]=useState<boolean>(false)
+  const menuoptionModal = () => {
+    SemenuIsopen(!menuIsopen)
+  };
   return (
     <>
       <div className="chat-page-container">
@@ -29,7 +33,7 @@ const ConversationBox = ({ data, gobackBtn }) => {
           </div>
           <div className="chat-page-head-right-side">
             <div className="options">
-              <img src={optionmenu} alt="menu" />
+              <img onClick={menuoptionModal} src={optionmenu} alt="menu" />
             </div>
           </div>
         </div>
@@ -60,6 +64,10 @@ const ConversationBox = ({ data, gobackBtn }) => {
           </div>
         </div>
       </div>
+      {
+        menuIsopen&&
+        <Modal closeFunc={menuoptionModal} html />
+      }
     </>
   );
 };
