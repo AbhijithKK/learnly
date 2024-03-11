@@ -9,7 +9,7 @@ const ChatBox = ({ image, name, lastMsgTime, lastMessage, id, idPicker }:chatbox
       <div className="chat-container" onClick={() => idPicker(id)}>
         <div className="sub-chat-conainer">
           <div className="chat-image-profile">
-            <img src={imgg} alt="" />
+            <img src={image?image:imgg} alt="" />
           </div>
           <div className="chat-user-details">
             <div className="chat-upper-details">
