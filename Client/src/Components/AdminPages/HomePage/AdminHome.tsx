@@ -1,5 +1,6 @@
 import "./AdminHome.css";
 import DashBoardBox from "./AdminHomeBox";
+import AdminChart from "./AdminHomeChart";
 const AdminHome = () => {
   return (
     <div className="admin-home-container">
@@ -14,7 +15,7 @@ const AdminHome = () => {
       {/* end box div */}
       {/* start chart section */}
       <div className="admin-dashboard-chart">
-
+<AdminChart/>
       </div>
     </div>
   );
