@@ -1,9 +1,19 @@
 .admin-home-container{
-
+margin-left: 1rem;
+margin-top: 1rem;
 }
 .admin-dashbord-box{
     display: flex;
     align-items: center;
     column-gap: 1rem;
     column-gap: 0.5rem;
+}
+.admin-page-name{
+    font-weight: bold;
+    padding: 0.5rem;
+}
+.download-pdf{
+margin-top: 0.8rem;
+text-decoration: underline;
+color: blue;
 }
