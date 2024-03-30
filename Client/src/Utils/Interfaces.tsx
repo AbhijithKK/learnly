@@ -90,3 +90,8 @@ export interface dialogboxInterface {
   ];
   senderId: number;
 }
+
+export interface DashboardBox{
+  titleText:string
+  mainData:string
+}

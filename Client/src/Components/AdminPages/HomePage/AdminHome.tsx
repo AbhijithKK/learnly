@@ -1,11 +1,23 @@
-import React from 'react'
-
+import "./AdminHome.css";
+import DashBoardBox from "./AdminHomeBox";
 const AdminHome = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <div className="admin-home-container">
+      <div className="admin-page-name">
+        DashBoard
+      </div>
+      <div className="admin-dashbord-box">
+        
+       <DashBoardBox mainData="₹ 5451.255" titleText="Total Sales" />
+       <DashBoardBox mainData="25" titleText="Total Courses" />
+      </div>
+      {/* end box div */}
+      {/* start chart section */}
+      <div className="admin-dashboard-chart">
 
-export default AdminHome
+      </div>
+    </div>
+  );
+};
+
+export default AdminHome;
