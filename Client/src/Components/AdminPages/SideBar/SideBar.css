@@ -1,0 +1,25 @@
+.side-bar-main-container {
+  align-items: center;
+  /* display: grid; */
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.side-bar-name-container {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  width: 100%;
+  height: 3rem;
+}
+.side-bar-image {
+  width: 20%;
+  height: 2rem;
+}
+.side-bar-image img{
+
+}
+.side-bar-name {
+  text-align: center;
+  margin-left: 1rem;
+
+}
