@@ -1,0 +1,136 @@
+.nav-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    position: fixed;
+    background-color: #ffffff;
+    box-shadow: 0 1px 12px;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+   padding-right: 5px;
+  }
+  .nav-logo {
+    margin-left: 0;
+  }
+  .nav-logo img:hover {
+    cursor: pointer;
+  }
+  .nav-titles ul {
+    display: flex;
+  
+    align-items: center;
+  }
+  .nav-titles li {
+    list-style: none;
+    margin-right: 12px;
+    cursor: pointer;
+  }
+  .nav-titles1 ul {
+    display: none;
+  }
+  
+  .nav-profile {
+    position: relative;
+  }
+  .navbar-cart-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  
+  }
+  .navbar-cart-item-count{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding-left: 50%;
+  padding-top: 20%;
+  transform: translate(-50% -50%);
+  font-weight: bold;
+  color: #ffffff;
+  }
+  .navbar-cart-img-img{
+    height: 45px;
+    width: 50px;
+    border-radius: 100%;
+    
+  }
+  .nav-profile img {
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+  
+  }
+  .nav-profile img:hover {
+    cursor: pointer;
+  }
+  .navbar-cart-img-img:hover {
+    cursor: pointer;
+  }
+  .nav-dropdown {
+    position: absolute;
+  }
+  .nav-dropdown-toggle {
+    display: none;
+  }
+  .mob-nav-main {
+    display: none;
+  }
+  
+  .nav-right-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.5rem;
+  }
+  
+  @media (max-width: 500px) {
+    .nav-titles ul {
+      display: none;
+      align-items: center;
+    }
+    .mob-nav-main {
+      height: 50px;
+      width: 100%;
+      background-color: rgb(56, 53, 53);
+      position: fixed;
+      bottom: 0;
+      z-index: 999;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      font-weight: bold;
+      color: white;
+      box-shadow: 0 3px 14px green;
+    }
+  }
+  @media (max-width:320px) {
+    .nav-right-side{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    
+      
+    }
+  
+    .navbar-cart-img-img{
+      height: 30px;
+      width: 30px;
+      border-radius: 100%;
+      
+    }
+    .nav-profile img {
+      height: 35px;
+      width: 35px;
+      border-radius: 100%;
+    
+    }
+    .nav-dropdown {
+      position: absolute;
+      padding-top: 1rem;
+    }
+  }
