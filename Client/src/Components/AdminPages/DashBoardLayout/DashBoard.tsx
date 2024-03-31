@@ -1,3 +1,4 @@
+import AddCourses from '../AddCoursesLayout/AddCourses'
 import AdminNavbar from '../AdminNav/AdminNavbar'
 import AllOrders from '../AllOrdersLaayout/AllOrders'
 import AllUsers from '../AllUsersLayout/AllUsers'
@@ -18,7 +19,8 @@ const DashBoard = () => {
         <div className="dashboard-home">
          {/* <AdminHome/> */}
          {/* <AllUsers/> */}
-         <AllOrders/>
+         {/* <AllOrders/> */}
+         <AddCourses/>
         </div>
       </div>
       </div>      
