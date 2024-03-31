@@ -1,4 +1,5 @@
 import AdminNavbar from '../AdminNav/AdminNavbar'
+import AllUsers from '../AllUsersLayout/AllUsers'
 import AdminHome from '../HomePage/AdminHome'
 import SideBar from '../SideBar/SideBar'
 import './Dashboard.css'
@@ -14,7 +15,8 @@ const DashBoard = () => {
           <SideBar/>
         </div>
         <div className="dashboard-home">
-         <AdminHome/>
+         {/* <AdminHome/> */}
+         <AllUsers/>
         </div>
       </div>
       </div>      
